@@ -1,0 +1,2 @@
+Dieser Baustein führt einen oder mehrere HS/FS-Befehle aus, wenn ein neues Telegramm eintrifft. 
+Die Befehle werden abhängig vom Eingangstelegramm ausgeführt.
