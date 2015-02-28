@@ -1,6 +1,6 @@
 # -*- coding: iso8859-1 -*-
 ## -----------------------------------------------------
-## Tor Status  ### V1.0
+## Tor Status  ### V1.1
 ##
 ## erstellt am: 2015-02-22 02:30
 ## -----------------------------------------------------
@@ -107,6 +107,6 @@
 5012|0|""|"'0'+str(SN[7])"                  |""|0|0|9|0
 5012|0|""|"'0'+str(SN[8])"                  |""|0|0|10|0
 
-# hh:mm:ss zusammensetzen, ggf. bei mm und ss Vornullen ergnzen
+# hh:mm:ss zusammensetzen, ggf. bei mm und ss Vornullen ergänzen
 5012|0|""|"str(SN[6]) + ':' + (SN[9][len(SN[9])-2:len(SN[9])])"|"0"|5|0|0|0
 #5012|0|""|"AN[5]      + ':' + (SN[10][len(SN[10])-2:len(SN[10])])"|"0"|6|0|0|0
