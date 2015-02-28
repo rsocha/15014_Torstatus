@@ -73,9 +73,9 @@
 #5012|abbruch bei bed. (0/1)|bedingung|formel|zeitformel|pin-ausgang|pin-timer|pin-speicher|pin-neg.ausgang
 
 ### bei Initialisierung
-5012|0|"EI"|"round(SN[1],0)"|""|1|0|0|0 		## akt. Pos senden
-5012|0|"EI"|"round(SN[2],0)"|""|2|0|0|0         ## akt. Pos senden
-5012|0|"EI"|"round(SN[3],0)"|""|4|0|0|0         ## akt. Pos senden
+#5012|0|"EI"|"round(SN[1],0)"|""|1|0|0|0 		## akt. Pos senden
+#5012|0|"EI"|"round(SN[2],0)"|""|2|0|0|0         ## akt. Pos senden
+#5012|0|"EI"|"round(SN[3],0)"|""|4|0|0|0         ## akt. Pos senden
 
 5012|0|"(EN[1]==1) and (EN[2]==0)"|"0"|""|1|0|1|0 
 5012|0|"(EN[1]==0) and (EN[2]==1)"|"EN[2]*100"|""|1|0|1|0
