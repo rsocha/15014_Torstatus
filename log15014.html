@@ -1,0 +1,199 @@
+<!-- Changelog
+Name - Datum    - Kommentar
+====   ========   ==============================
+RS   - 27.02.15 - Baustein erstellt
+-->
+<html>
+   <head>
+      <title>
+      </title>
+   </head>
+   <link rel="stylesheet" href="style.css" type="text/css">
+   <body>
+      <div class="titel">
+         Tor Status
+      </div>
+      <div class="nav">
+         <A HREF="index.html">Hilfe</A>
+         /
+         <A HREF="logic.html">Logik</A>
+         / Bin&auml;r- Text- Ausl&ouml;ser /
+         <A HREF="#anker1">Eing&auml;nge</A>
+         /
+         <A HREF="#anker2">Ausg&auml;nge</A>
+      </div>
+      <div class="field0">
+         Beschreibung
+      </div>
+      <div class="field1">
+		  <br />
+		  <br />
+         Eingang 1:
+		 <br />
+         KO f&uuml;r Tor ist offen (1Bit).
+         <br />
+         <br />
+         Eingang 2:
+         <br />
+         KO f&uuml;r Tor ist geschlossen (1Bit)
+         <br />
+		 <br />
+		 Eingang 3:
+         <br />
+         Wert in sec eingeben f&uuml;r Verz&ouml;gerung bis an A3 die Warnausgabe (1Bit) kommt.
+         <br />
+		 <br />
+		 Eingang 4:
+         <br />
+         Wert in sec eingeben f&uuml;r Schrittweite des Betriebsstundenz&auml;hlers, Ausgabe an A5. Ausgabe in hh:mm.
+		 Rest bei &ouml;ffnen oder schliessen.
+         <br />
+		 <br />
+		 Ausgang 1:
+         <br />
+         Hier wird 0% bei offen, 50% bei f&auml;hrt oder halboffen und 100% bei geschlossen ausgegeben.
+         <br />
+		 <br />
+		 Ausgang 2:
+         <br />
+         Hier wird eine 1 f&uuml;r Tor f&auml;hrt und eine 0 f&uuml;r Tor f&auml;hrt nicht ausgegeben.
+         <br />
+		 <br />
+		 Ausgang 3:
+         <br />
+         Hier wird nach Ablauf des Timers auf A3 eine 1 f&uuml;r Warnung ausgegeben.
+         <br />
+		 <br />
+		 Ausgang 4:
+         <br />
+         Hier wird eine 1 bei offen, eine 2 bei f&auml;hrt und eine 0 bei geschlossen ausgegeben.
+         <br />
+		 <br />
+		 Ausgang 5:
+         <br />
+         Hier wird die Zeit in hh:mm seit ge&ouml;ffent oder geschlossen ausgegeben..
+         <br />
+		 <br />
+      </div>
+      <div class="field0">
+         <a name="anker1"></a>
+         Eing&auml;nge
+      </div>
+      <table border="1" width="612" class="log_e" cellpadding="0" cellspacing="0">
+         <COL WIDTH=203>
+         <COL WIDTH=132>
+         <COL WIDTH=275>
+         <tr>
+            <td>
+               Eingang</td>
+            <td>
+               Init</td>
+            <td>
+               Beschreibung</td>
+         </tr>
+         <tr>
+            <td class="log_e1">
+               Eingang 1</td>
+            <td class="log_e2">
+               0</td>
+            <td class="log_e3">
+               Hier wird das Kommunikationsobjekt zugeordnet f&uuml;r Tor ist offen.</td>
+         </tr>
+         <tr>
+            <td class="log_e1">
+               Eingang 2</td>
+            <td class="log_e2">
+               0</td>
+            <td class="log_e3">
+               Hier wird das Kommunikationsobjekt zugeordnet f&uuml;r Tor ist geschlossen.</td>
+         </tr>
+		 <tr>
+            <td class="log_e1">
+               Eingang 3</td>
+            <td class="log_e2">
+               0</td>
+            <td class="log_e3">
+               Hier wir die Zeit f&uuml;r den Timer eingestellt falls Tor nicht geschlossen wird.</td>
+		   </tr>
+		   <tr>
+            <td class="log_e1">
+               Eingang 4</td>
+            <td class="log_e2">
+               0</td>
+            <td class="log_e3">
+               Hier wir die Schrittweite f&uuml;r den Betriebsstundenz&auml;hlers eingestellt.</td>
+		   </tr>
+      </table>
+      <div class="field0">
+         <a name="anker2"></a>
+         Ausg&auml;nge
+      </div>
+      <table border="1" width="612" class="log_a" cellpadding="0" cellspacing="0">
+         <COL WIDTH=203>
+         <COL WIDTH=132>
+         <COL WIDTH=275>
+         <tr>
+            <td>
+               Ausgang</td>
+            <td>
+               Init</td>
+            <td>
+               Beschreibung</td>
+         </tr>
+         <tr>
+            <td class="log_a1">
+               Ausgang 1</td>
+            <td class="log_a2">
+               0</td>
+            <td class="log_a3">
+               Hier wird 0%, 50% oder 100% ausgegeben, je nach Torstatus.</td>
+         </tr>
+         <tr>
+            <td class="log_a1">
+               Ausgang 2 </td>
+            <td class="log_a2">
+               0</td>
+            <td class="log_a3">
+               Hier wird eine 1 f&uuml;r Tor f&auml;hrt und eine 0 f&uuml;r Tor f&auml;hrt nicht ausgegeben.</td>
+         </tr>
+           <tr>
+            <td class="log_a1">
+               Ausgang 3 </td>
+            <td class="log_a2">
+               0</td>
+            <td class="log_a3">
+               Hier wird eine 1 bei Warnung ausgegeben.</td>
+         </tr>
+		 <tr>
+            <td class="log_a1">
+               Ausgang 4 </td>
+            <td class="log_a2">
+               0</td>
+            <td class="log_a3">
+               Hier wird eine 1 bei offen, eine 2 bei f&auml;hrt und eine 0 bei geschlossen ausgegeben.</td>
+		   </tr>
+		   <tr>
+            <td class="log_a1">
+               Ausgang 5 </td>
+            <td class="log_a2">
+               0</td>
+            <td class="log_a3">
+               Hier wird die Zeit in hh:mm seit ge&ouml;ffent oder geschlossen ausgegeben.</td>
+		   </tr>
+      </table>
+      <div class="field0">
+         <a name="anker3"></a>
+         Sonstiges
+      </div>
+      <div class="field1">
+         Neuberechnung beim Start: Nein
+         <br />
+         Baustein ist Remanent: Ja
+         <br />
+         Interne Bezeichnung: "15014"
+         <br />
+         Der Baustein wird im "Experten" in socha.at einsortiert.
+         <br />
+      </div>
+   </body>
+</html>
