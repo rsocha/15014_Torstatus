@@ -1,2 +1,2 @@
-# Squeeze-Template
-Squeezebox Template für den Gina HS
+# Template
+Templates für den Gina HS
