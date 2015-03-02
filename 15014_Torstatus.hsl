@@ -97,7 +97,7 @@
 ### Betriebsstunden Zähler
 5012|0|"OC[2] and EN[1] or EN[2]"|"SN[4]+(float(EN[4])/3600)"|""|0|0|4|0
 5012|0|"(OC[2] or EC[4] or EI) and EN[4]"|"1"|"EN[4]"|0|2|0|0
-5012|0|"(EN[1]==0) and (EN[2]==0) or EI"|"0"|""|0|0|4|0
+5012|0|"(EN[1]==0) and (EN[2]==0)"|"0"|""|0|0|4|0
 5012|0|"SC[4] or EI"|"SN[4]"|""|0|0|5|0
 
 ### Dezimalzeit in hh mm ss zerlegen
