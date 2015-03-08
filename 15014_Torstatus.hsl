@@ -108,5 +108,5 @@
 5012|0|""|"'0'+str(SN[8])"                  |""|0|0|10|0
 
 # hh:mm:ss zusammensetzen, ggf. bei mm und ss Vornullen ergänzen
-5012|0|""|"str(SN[6]) + ':' + (SN[9][len(SN[9])-2:len(SN[9])])"|"0"|5|0|0|0
+5012|0|""|"str(SN[6]) + ':' + (SN[9][len(SN[9])-2:len(SN[9])]) + 'Std'"|"0"|5|0|0|0
 #5012|0|""|"AN[5]      + ':' + (SN[10][len(SN[10])-2:len(SN[10])])"|"0"|6|0|0|0
